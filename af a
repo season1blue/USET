@@ -1,0 +1,65 @@
+[33mcommit 3dbbd98364a3cd1197fe9d2912080fe002f885e3[m[33m ([m[1;36mHEAD -> [m[1;32minput_dialogue[m[33m)[m
+Author: season <510519588@qq.com>
+Date:   Wed Jul 1 19:25:00 2020 +0800
+
+    修改了word_alphabet 以及存在了shuffle的选项 对应表中的12 13 接下来我要修改local knowledge了,需要改动collatefn以及process的处理逻辑
+
+[33mcommit c76d76d33a1499ca9d88da02f4c5de7025b4eaed[m
+Author: season <510519588@qq.com>
+Date:   Mon Jun 22 21:20:25 2020 +0800
+
+    终于是把history加上了 然后两个mem也可以跑通了,后续加local的时候需要考虑,现在在collatefn层次,还是分开了,这个要注意.现在对应列表中第九个
+
+[33mcommit e57fb55ff04e06db0069e45463928e993d69ba39[m
+Author: season <510519588@qq.com>
+Date:   Fri Jun 19 16:59:03 2020 +0800
+
+    这个版本已经可以跑通了,加入了dialogue为基本input,但是在collatefn那个部分 还是将它按照原本的text,slot等分开了
+
+[33mcommit a512430f24d09dc093911b9ce5db138fd9cd75e5[m
+Author: season <510519588@qq.com>
+Date:   Thu Jun 18 21:23:24 2020 +0800
+
+    就差改collate fn了
+
+[33mcommit e3d0e332b9dc041457206891f0487e01870eb9dd[m
+Author: season <510519588@qq.com>
+Date:   Thu Jun 18 18:39:13 2020 +0800
+
+    6.18更改 当前已经初步改完了dataloader 就是需要思考如何将数据输入到模型中
+
+[33mcommit 6beffdcff6435a02daf21acb11d139051647da2a[m[33m ([m[1;31morigin/input_dial[m[33m, [m[1;32minput_dial[m[33m)[m
+Author: season <510519588@qq.com>
+Date:   Wed Jun 17 19:15:33 2020 +0800
+
+    修改为dialogue
+
+[33mcommit e4d909e32175e8ce0a34f8f0daf994ef6f365ad4[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: season <510519588@qq.com>
+Date:   Wed Jun 17 19:08:48 2020 +0800
+
+    改动为dialogue为基本单元前的最后一版 可以运行
+
+[33mcommit f1075ff83a11da1f2ef2e3fadb83eb8ac1a4b5da[m
+Author: season <510519588@qq.com>
+Date:   Wed Jun 17 19:05:54 2020 +0800
+
+    test2
+
+[33mcommit 67ce0854e1a30b5addd1e3fc0c492bbe66df424b[m
+Author: season <510519588@qq.com>
+Date:   Wed Jun 17 18:56:47 2020 +0800
+
+    init
+
+[33mcommit 200c94211cdbd0f6ff7e34dfb20917672d182b82[m
+Author: season <510519588@qq.com>
+Date:   Wed Jun 17 18:45:17 2020 +0800
+
+    second test
+
+[33mcommit 2d5f1da11811d12c2d0b86c8233bdee296a05b4c[m
+Author: season <510519588@qq.com>
+Date:   Wed Jun 17 18:39:31 2020 +0800
+
+    init

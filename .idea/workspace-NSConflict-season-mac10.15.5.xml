@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9b7fa9e2-9aa3-44e5-b681-de081f5b4f11" name="Default" comment="init">
+      <change beforePath="$PROJECT_DIR$/save/alphabet/intent_dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/save/alphabet/intent_dict.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/alphabet/intent_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/save/alphabet/intent_list.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/alphabet/slot_dict.txt" beforeDir="false" afterPath="$PROJECT_DIR$/save/alphabet/slot_dict.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/alphabet/slot_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/save/alphabet/slot_list.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/model/dataset.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/save/model/dataset.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/model/model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/save/model/model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/param.json" beforeDir="false" afterPath="$PROJECT_DIR$/save/param.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/module.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/util_data/util_exk.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/util_data/util_exk.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1d50ooMj0gAiu44a1YNwkAdMhhl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SP7.1" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings is-module-sdk="true">
+        <envs>
+          <env key="python3.5" value="/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5" />
+        </envs>
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myEnvs">
+          <map>
+            <entry key="python3.5" value="/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5" />
+          </map>
+        </option>
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\SP" />
+      <recent name="D:\season\MyCode\SP\utils\Test_module" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\season\MyCode\SP\data\KVR_shuffle" />
+      <recent name="$PROJECT_DIR$/utils/BackUp" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b7fa9e2-9aa3-44e5-b681-de081f5b4f11" name="Default" comment="" />
+      <created>1590631948179</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590631948179</updated>
+      <workItem from="1591699825101" duration="1127000" />
+      <workItem from="1591701016532" duration="43925000" />
+      <workItem from="1591963112444" duration="2085000" />
+      <workItem from="1591966506720" duration="24405000" />
+      <workItem from="1592203456833" duration="9485000" />
+      <workItem from="1592215736777" duration="37033000" />
+      <workItem from="1592389978355" duration="230000" />
+      <workItem from="1592390233460" duration="1506000" />
+      <workItem from="1592391825196" duration="93696000" />
+      <workItem from="1593240417321" duration="24854000" />
+      <workItem from="1593346763530" duration="2403000" />
+      <workItem from="1593431866673" duration="30220000" />
+      <workItem from="1594018621030" duration="37754000" />
+      <workItem from="1594178076239" duration="43000" />
+      <workItem from="1594191739872" duration="32357000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1592389621019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592389621019</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <created>1592390373005</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592390373005</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <created>1592391407820</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592391407821</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="678" y="382" key="#Notifications" timestamp="1592392308928">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="678" y="382" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1592392308928" />
+    <state x="294" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593335273835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="294" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273835" />
+    <state x="541" y="294" key="FileChooserDialogImpl" timestamp="1594294246096">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="541" y="283" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593348567705" />
+    <state x="541" y="294" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1594294246096" />
+    <state x="576" y="311" key="FileChooserDialogImpl/49.24.1871.1056@49.24.1871.1056" timestamp="1591777461130" />
+    <state x="729" y="418" key="Github.ShareDialog" timestamp="1592390310823">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="729" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592390310823" />
+    <state x="646" y="219" key="Github.UntrackedFilesDialog" timestamp="1592390316717">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="646" y="219" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592390316717" />
+    <state x="655" y="146" key="SettingsEditor" timestamp="1592731020005">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="146" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592731020005" />
+    <state x="282" y="188" key="SettingsEditor/49.24.1871.1056@49.24.1871.1056" timestamp="1591862874134" />
+    <state x="442" y="257" key="Vcs.Push.Dialog.v2" timestamp="1592389627344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="442" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592389627344" />
+    <state x="1378" y="0" width="558" height="1048" key="dock-window-1" timestamp="1592397773800">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1378" y="0" width="558" height="1048" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1592397773800" />
+    <state x="648" y="423" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1592389558889">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="648" y="423" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592389558889" />
+    <state x="384" y="253" width="700" height="530" key="recent.locations.popup" timestamp="1592118931961">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="384" y="253" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592118931961" />
+    <state x="623" y="234" width="695" height="705" key="search.everywhere.popup" timestamp="1594213947615">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592735517701" />
+    <state x="623" y="234" width="695" height="705" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1594213947615" />
+    <state x="665" y="234" width="672" height="705" key="search.everywhere.popup/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1593605892914" />
+  </component>
+</project>
