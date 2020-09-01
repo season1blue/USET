@@ -110,7 +110,7 @@ class ModelManager(nn.Module):
             att_dim = self.__args.attention_output_dim
         )
         # Initialize an Decoder object for slot.
-        self.__slot_decoder = LSTMDecoder(
+        self.__slot_decoder0 = LSTMDecoder(
             # input_dim= self.__args.word_embedding_dim ,
             input_dim=self.__args.word_embedding_dim,
             hidden_dim=self.__args.slot_decoder_hidden_dim,
@@ -126,7 +126,38 @@ class ModelManager(nn.Module):
 
         )
 
-        # self.__slot_module_list = nn.ModuleList([self.__slot_decoder0, self.__slot_decoder1, self.__slot_decoder2])
+        self.__slot_decoder1 = LSTMDecoder(
+            # input_dim= self.__args.word_embedding_dim ,
+            input_dim=self.__args.word_embedding_dim,
+            hidden_dim=self.__args.slot_decoder_hidden_dim,
+            output_dim=self.__num_slot,
+            dropout_rate=self.__args.dropout_rate,
+            embedding_dim=self.__args.slot_embedding_dim,
+            extra_dim=self.__num_intent,
+            mem_dim=self.__mem_embedding_dim,
+            lk_dim=self.__args.local_knowledge_hidden_dim,
+            his_dim=self.__args.history_hidden_dim,
+            add_mem=self.__add_mem,
+            att_dim=self.__args.attention_output_dim
+
+        )
+        self.__slot_decoder2 = LSTMDecoder(
+            # input_dim= self.__args.word_embedding_dim ,
+            input_dim=self.__args.word_embedding_dim,
+            hidden_dim=self.__args.slot_decoder_hidden_dim,
+            output_dim=self.__num_slot,
+            dropout_rate=self.__args.dropout_rate,
+            embedding_dim=self.__args.slot_embedding_dim,
+            extra_dim=self.__num_intent,
+            mem_dim=self.__mem_embedding_dim,
+            lk_dim=self.__args.local_knowledge_hidden_dim,
+            his_dim=self.__args.history_hidden_dim,
+            add_mem=self.__add_mem,
+            att_dim=self.__args.attention_output_dim
+
+        )
+
+        self.__slot_module_list = nn.ModuleList([self.__slot_decoder0, self.__slot_decoder1, self.__slot_decoder2])
 
         # One-hot encoding for augment data feed.
         self.__intent_embedding = nn.Embedding(
@@ -364,13 +395,21 @@ class ModelManager(nn.Module):
 
         pred_intent, intent_out = self.__intent_decoder(encoded_hiddens=hiddens,seq_lens=seq_lens,forced_input=forced_intent,if_print=False)
 
-        # intent传入时，依照参数diff确定输入的数量，if not 就输入1个 else 都输入   这里也就是将token-level的intent转为utterance-level
         if not self.__args.differentiable:
             _, idx_intent = pred_intent.topk(1, dim=-1)
             feed_intent = self.__intent_embedding(idx_intent.squeeze(1))
         else:
             feed_intent = pred_intent
+
         _, intent_idx = pred_intent.topk(1, dim=1)
+        list_intent = intent_idx.cpu().data.numpy().tolist()
+        nested_intent = Evaluator.nested_list([list(Evaluator.expand_list(list_intent))], seq_lens)[0]
+        option_intent = Evaluator.max_freq_predict(nested_intent)[0]
+
+        if forced_intent is not None:
+            option_intent = forced_intent[0].item()
+
+        curr_slot_decoder = self.__slot_module_list[option_intent]
         # list_intent = intent_idx.cpu().data.numpy().tolist()
         # nested_intent = Evaluator.nested_list([list(Evaluator.expand_list(list_intent))], seq_lens)[0]
         # option_intent = Evaluator.max_freq_predict(nested_intent)[0]
@@ -390,7 +429,7 @@ class ModelManager(nn.Module):
         #  dim : 384 & num_intent
 
         # hiddens = torch.cat([lstm_hiddens, shallow], dim=1)
-        pred_slot, slot_out = self.__slot_decoder(encoded_hiddens=hiddens,seq_lens=seq_lens,forced_input=forced_slot,extra_input = feed_intent,history = att_his_hidden,local = local,if_print =True)
+        pred_slot, slot_out = curr_slot_decoder(encoded_hiddens=hiddens,seq_lens=seq_lens,forced_input=forced_slot,extra_input = feed_intent,history = att_his_hidden,local = local,if_print =True)
 
         if if_train:
             intent_out = intent_out.squeeze(0)
@@ -398,8 +437,6 @@ class ModelManager(nn.Module):
         else:
             intent_out = intent_out.squeeze(1)
             slot_out = slot_out.squeeze(1)
-        #
-        _, slot_idx = pred_slot.topk(1, dim=1)
 
         if n_predicts is None:
             return F.log_softmax(pred_slot, dim=1), F.log_softmax(pred_intent, dim=1), slot_out, intent_out
